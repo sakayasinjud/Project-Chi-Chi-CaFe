@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- HERO -->
+<div class="p-5 mb-4 text-white rounded-4 shadow"
+     style="
+     background-image: url('https://img.freepik.com/premium-photo/wooden-table-top-with-blurred-abstract-background-green-garden-modern-coffee-shop_1120824-13669.jpg');
+     background-size: cover;
+     background-position: center;
+     ">
+
+    <div style="background: rgba(0,0,0,0.5); padding: 30px; border-radius: 15px;">
+        <h1 class="display-5 fw-bold">☕ ยินดีต้อนรับสู่ร้านคาเฟ่</h1>
+        <p class="col-md-8 fs-5">
+            ร้านของเราเป็นร้านกาแฟ_คาเฟ่ สำหรับวัยรุ่นและเด็กแนว
+        </p>
+        <a href="/menu" class="btn btn-warning btn-lg">ดูเมนูทั้งหมด</a>
+    </div>
+
+</div>
+
+<!-- ☁️ เมนูแนะนำ -->
+<div class="text-center mb-4">
+    <span class="cloud-title">☁️ เมนูแนะนำ ☁️</span>
+</div>
+
+<!-- MENU CARDS (3x2) -->
+<div class="row g-4 justify-content-center">
+
+    <!-- 1 -->
+    <div class="col-md-4">
+        <div class="card menu-card h-100">
+            <img src="https://www.cuisinart.com/dw/image/v2/ABAF_PRD/on/demandware.static/-/Sites-us-cuisinart-sfra-Library/default/dw42dcae51/images/recipe-Images/cafe-latte1-recipe_resized.jpg?sw=1200&sh=630" class="card-img-top">
+            <div class="card-body text-center">
+                <h5>Latte</h5>
+                <p>กาแฟนมรสละมุน</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="col-md-4">
+        <div class="card menu-card h-100">
+            <img src="https://santipanich.com/wp-content/uploads/2021/05/coffee-cup-wooden-table-dark-background.jpg" class="card-img-top">
+            <div class="card-body text-center">
+                <h5>Espresso</h5>
+                <p>เข้มข้น สำหรับสายกาแฟแท้</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="col-md-4">
+        <div class="card menu-card h-100">
+            <img src="https://benothailand.com/cdn/shop/articles/cappuchino_2fc7d9fd-4cc1-43b6-9bf0-a57889d8dff6.jpg?v=1766713595&width=480" class="card-img-top">
+            <div class="card-body text-center">
+                <h5>Cappuccino</h5>
+                <p>ฟองนมนุ่มๆ</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="col-md-4">
+        <div class="card menu-card h-100">
+            <img src="https://milkandpop.com/wp-content/uploads/2020/11/mocha-latte-13.jpg" class="card-img-top">
+            <div class="card-body text-center">
+                <h5>Mocha</h5>
+                <p>กาแฟผสมช็อกโกแลต</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="col-md-4">
+        <div class="card menu-card h-100">
+            <img src="https://myeverydaytable.com/wp-content/uploads/americano-1024x576.png" class="card-img-top">
+            <div class="card-body text-center">
+                <h5>Americano</h5>
+                <p>กาแฟดำ กลิ่นหอม</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="col-md-4">
+        <div class="card menu-card h-100">
+            <img src="https://aprikamatcha.com/cdn/shop/articles/20250815021705-featured_image_f04f5f65-4e63-4fea-bddc-fa7a9a7e0905.webp?v=1755224242&width=1600" class="card-img-top">
+            <div class="card-body text-center">
+                <h5>matcha Latte</h5>
+                <p>มัทฉะ หอมละมุน</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

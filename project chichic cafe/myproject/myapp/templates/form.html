@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2 class="mb-4">✏️ เพิ่ม / แก้ไข เมนู</h2>
+
+<form method="POST" class="card p-4 shadow">
+{% csrf_token %}
+
+<!-- error -->
+{% if error %}
+<div class="alert alert-danger">
+    {{ error }}
+</div>
+{% endif %}
+
+<div class="mb-3">
+    <label class="form-label">ชื่อ</label>
+    <input type="text" name="name" class="form-control" value="{{ menu.name }}">
+</div>
+
+<div class="mb-3">
+    <label class="form-label">ราคา</label>
+    <input type="number" name="price" class="form-control" value="{{ menu.price }}">
+</div>
+
+<div class="mb-3">
+    <label class="form-label">ประเภท</label>
+    <input type="text" name="category" class="form-control" value="{{ menu.category }}">
+</div>
+
+<div class="mb-3">
+    <label class="form-label">รายละเอียด</label>
+    <textarea name="description" class="form-control">{{ menu.description }}</textarea>
+</div>
+
+<!-- 🔒 PASSWORD -->
+<div class="mb-3">
+    <label class="form-label">🔒 รหัสผ่าน</label>
+    <input type="password" name="password" class="form-control" required>
+</div>
+
+<button class="btn btn-success w-100">💾 บันทึก</button>
+
+</form>
+
+{% endblock %}
