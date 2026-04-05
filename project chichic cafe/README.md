@@ -29,13 +29,13 @@
 1. โหลด โปรเจค
 
 ```
-git clone https://github.com/yourusername/coffee-shop.git
+https://github.com/sakayasinjud/Project-Chi-Chi-CaFe
 ```
 
 2. เปิดโฟลเดอร์ใน vs code
 
 ```
-cd coffee-shop
+project chichic cafe
 ```
 
 3. ติดตั้ง Django
